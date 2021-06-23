@@ -129,8 +129,8 @@ public class Login {
         evidences.takeScreenshot(driver,pastaPrint,"Cenário 4 - Passo 1 - Validar a Pagina de Autenticacao");
     }
 
-    @Quando("^digito no campo \"([^\"]*)\" e clico no link Forgot You Password$")
-    public void digitoNoCampoEClicoNoLinkForgotYouPassword(String arg0) throws Throwable {
+    @Quando("^digito no campo \"([^\"]*)\" e clico no link forgot your password$")
+    public void digitoNoCampoEClicoNoLinkForgotYourPassword(String arg0) throws Throwable {
         driver.findElement(By.id("email")).sendKeys("samuel.siqueira.pereira@gmail.com");
         driver.findElement(By.xpath("//*[@id=\"login_form\"]/div/p[1]/a")).click();
         evidences.takeScreenshot(driver,pastaPrint,"Cenário 4 - Passo 2 - Informar o email");
@@ -142,4 +142,9 @@ public class Login {
         assertEquals("Forgot your password - My Store",driver.getTitle());
 
     }
+
+
+
+
+
 }

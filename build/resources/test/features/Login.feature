@@ -1,8 +1,10 @@
 #language: pt
 #encoding: utf8
-Funcionalidade: Login no Ecommerce Fake
-  Como um cliente gostaria de ir na página de autenticação insiro e-mail e clico no botão create account
-  e ao logar digito e-mail e senha e clico no botão sign in, caso digito e-mail inválido retorna mensagem de erro na autenticação
+Funcionalidade: Ecommerce Fake
+  Como um cliente gostaria criar login na página de autenticação insiro e-mail e clico no botão create account
+  Como cliente quero logar na página digito e-mail e senha e clico no botão sign in
+  Caso digito e-mail inválido retorna mensagem de erro na autenticação
+  Caso digito e-mail e esqueço a senha clico no link Forgot your password
 
 
   # Completar o cenário abaixo
@@ -25,7 +27,7 @@ Funcionalidade: Login no Ecommerce Fake
 
   Cenário: Esquecir a senha
     Dado que acesso a pagina de autenticacao
-    Quando digito no campo "email" e clico no link Forgot You Password
+    Quando digito no campo "email" e clico no link forgot your password
     Entao informo "email" e clico no botao Retrieve Password
 
 
